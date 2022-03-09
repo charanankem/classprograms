@@ -58,7 +58,9 @@ class Selecting
         elsif d=="u"
             billmeth.upi(b)
         else
-            puts "Please select a valid method"
+            puts "Please select again a valid method"
+            ob=Selecting.new
+            ob.selectmethod(b)
         end
     end
 end 
